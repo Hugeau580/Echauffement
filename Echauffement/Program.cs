@@ -1,4 +1,6 @@
-﻿namespace Echauffement;
+﻿using System.Net.Security;
+
+namespace Echauffement;
 
 class Program
 {
@@ -34,7 +36,7 @@ class Program
         // Etape 4 : demandez maintenant à l'utilisateur combien d'euro il a (nombre décimal)
 
         Console.WriteLine("Combien d'argent a tu ?");
-        int Money = (int)Convert.ToUInt32(Console.ReadLine());
+        int Money = Convert.ToInt32(Console.ReadLine());
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
         int sword = 1;
@@ -42,7 +44,7 @@ class Program
         int crowbow = 3;
         int hammer = 4;
 
-        Console.WriteLine("Choisis une arme");
+
         Console.WriteLine("1) épee 12$");
         Console.WriteLine("2) hache 4$");
         Console.WriteLine("3) arbalette 6$");
@@ -50,8 +52,11 @@ class Program
 
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
+        Console.WriteLine("Choisis une arme (entre 1 et 4)");
+        int WeaponChoice = Convert.ToInt32(Console.ReadLine());
 
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
+
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
