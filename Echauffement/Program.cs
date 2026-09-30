@@ -37,6 +37,17 @@ class Program
         int Money = (int)Convert.ToUInt32(Console.ReadLine());
 
         // Etape 5 : affichez maintenant 4 choix d'armes avec chacune un prix
+        int sword = 1;
+        int axe = 2;
+        int crowbow = 3;
+        int hammer = 4;
+
+        Console.WriteLine("Choisis une arme");
+        Console.WriteLine("1) épee 12$");
+        Console.WriteLine("2) hache 4$");
+        Console.WriteLine("3) arbalette 6$");
+        Console.WriteLine("4) marteau 10$");
+
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
